@@ -248,5 +248,6 @@ function DefaultString(x) {
 ---
 本文主要参考：
 1. [JavaScript 类型的那些事](https://segmentfault.com/a/1190000010352325)
-
-
+2. [深入理解Javascript中Object类型的转换](https://zhuanlan.zhihu.com/p/29730094)
+3. [ECMA-262](http://www.ecma-international.org/ecma-262/6.0/#sec-addition-operator-plus-runtime-semantics-evaluation)
+4. [隐式转换中案例分析](https://sinaad.github.io/xfe/2016/04/15/ToPrimitive/)

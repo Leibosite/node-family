@@ -25,3 +25,8 @@ var maxArea = function(height) {
 // 示例:
 // 输入：height = [4,3,2,1,4]
 // 输出：16
+const mavV = function(height){
+    if(height.length == 0) return 0;
+    const len = height.length;
+    let left = 0, right = len
+}

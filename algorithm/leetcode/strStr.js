@@ -8,11 +8,11 @@ const strStr = function(source, target) {
     const tLen = target.length, sLen = source.length;
     let i = 0
     for(; i<sLen; i++){
-        let tmpStr = source.substring(i, tLen);
+        let tmpStr = source.substring(i, i+tLen);
         if(tmpStr == target) {
             return i;
         } else {
-            const index = target.indexOf(source[tLen]);
+            const index = target.indexOf(source[i + tLen + 1]);
             if (index >= 0) {
                 i = i + tLen - index - 1;
             } else {
@@ -24,4 +24,4 @@ const strStr = function(source, target) {
     return i;
 }
 
-console.log(strStr("hello, world", "llo"))
+console.log(strStr("he0llo, world", "llo"))

@@ -1,5 +1,6 @@
 /**
  * 反转链表，每 k 个节点反转一次，不足 k 就保持原有顺序
+ * http://c.biancheng.net/view/8105.html
  */
 
 class Node {
@@ -11,10 +12,10 @@ class Node {
         }
     }
 
-    toString(){
+    toString() {
         const va = [];
         let pre = this;
-        while(pre.next){
+        while(pre.next) {
             va.push(pre.vaule)
         }
         return va.join(',')
@@ -59,12 +60,11 @@ const headRevert = function(head) {
 const recursiveReverse = function(head) {
     if(head == null || head.next === null ) {
         return head;
-    } else {
-        let newHead = recursiveReverse(head.next);
-        head.next.next = head;
-        head.next = null;
-        return newHead;
-    }
+    } 
+    let newHead = recursiveReverse(head.next);
+    head.next.next = head;
+    head.next = null;
+    return newHead;
 }
 
 function invert(head, n) {
